@@ -36,14 +36,14 @@ def construct_dataset(clearml_info_string):
         dataset_definition = yaml.safe_load(f)
 
     assert set(dataset_definition.keys()).issuperset(
-        {'train', 'test', 'val', 'nc', 'names'}
-    ), "The right keys were not found in the yaml file, make sure it at least has the following keys: ('train', 'test', 'val', 'nc', 'names')"
+        {'train', 'datasets', 'val', 'nc', 'names'}
+    ), "The right keys were not found in the yaml file, make sure it at least has the following keys: ('train', 'datasets', 'val', 'nc', 'names')"
 
     data_dict = dict()
     data_dict['train'] = str(
         (dataset_root_path / dataset_definition['train']).resolve()) if dataset_definition['train'] else None
-    data_dict['test'] = str(
-        (dataset_root_path / dataset_definition['test']).resolve()) if dataset_definition['test'] else None
+    data_dict['datasets'] = str(
+        (dataset_root_path / dataset_definition['datasets']).resolve()) if dataset_definition['datasets'] else None
     data_dict['val'] = str(
         (dataset_root_path / dataset_definition['val']).resolve()) if dataset_definition['val'] else None
     data_dict['nc'] = dataset_definition['nc']
@@ -100,7 +100,7 @@ class ClearmlLogger:
             # Get ClearML Dataset Version if requested
             if opt.data.startswith('clearml://'):
                 # data_dict should have the following keys:
-                # names, nc (number of classes), test, train, val (all three relative paths to ../datasets)
+                # names, nc (number of classes), datasets, train, val (all three relative paths to ../datasets)
                 self.data_dict = construct_dataset(opt.data)
                 # Set data to data_dict because wandb will crash without this information and opt is the best way
                 # to give it to them

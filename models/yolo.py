@@ -363,7 +363,7 @@ if __name__ == '__main__':
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--profile', action='store_true', help='profile model speed')
     parser.add_argument('--line-profile', action='store_true', help='profile model speed layer by layer')
-    parser.add_argument('--test', action='store_true', help='test all yolo*.yaml')
+    parser.add_argument('--datasets', action='store_true', help='datasets all yolo*.yaml')
     opt = parser.parse_args()
     opt.cfg = check_yaml(opt.cfg)  # check YAML
     print_args(vars(opt))
@@ -380,7 +380,7 @@ if __name__ == '__main__':
     elif opt.profile:  # profile forward-backward
         results = profile(input=im, ops=[model], n=3)
 
-    elif opt.test:  # test all models
+    elif opt.test:  # datasets all models
         for cfg in Path(ROOT / 'models').rglob('yolo*.yaml'):
             try:
                 _ = Model(cfg)

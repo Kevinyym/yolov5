@@ -367,7 +367,7 @@ class WandbLogger():
             data['val'] = WANDB_ARTIFACT_PREFIX + str(Path(project) / 'val')
 
         path = Path(data_file)
-        # create a _wandb.yaml file with artifacts links if both train and test set are logged
+        # create a _wandb.yaml file with artifacts links if both train and datasets set are logged
         if not log_val_only:
             path = (path.stem if overwrite_config else path.stem + '_wandb') + '.yaml'  # updated data.yaml path
             path = ROOT / 'data' / path

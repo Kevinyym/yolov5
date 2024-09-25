@@ -1,6 +1,6 @@
 # YOLOv5 🚀 by Ultralytics, GPL-3.0 license
 """
-Perform test request
+Perform datasets request
 """
 
 import pprint

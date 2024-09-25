@@ -56,8 +56,8 @@ def run(
         data=ROOT / 'data/coco128.yaml',  # dataset.yaml path
         device='',  # cuda device, i.e. 0 or 0,1,2,3 or cpu
         half=False,  # use FP16 half-precision inference
-        test=False,  # test exports only
-        pt_only=False,  # test PyTorch only
+        test=False,  # datasets exports only
+        pt_only=False,  # datasets PyTorch only
         hard_fail=False,  # throw error on benchmark failure
 ):
     y, t = [], time.time()
@@ -118,8 +118,8 @@ def test(
         data=ROOT / 'data/coco128.yaml',  # dataset.yaml path
         device='',  # cuda device, i.e. 0 or 0,1,2,3 or cpu
         half=False,  # use FP16 half-precision inference
-        test=False,  # test exports only
-        pt_only=False,  # test PyTorch only
+        test=False,  # datasets exports only
+        pt_only=False,  # datasets PyTorch only
         hard_fail=False,  # throw error on benchmark failure
 ):
     y, t = [], time.time()
@@ -151,8 +151,8 @@ def parse_opt():
     parser.add_argument('--data', type=str, default=ROOT / 'data/coco128.yaml', help='dataset.yaml path')
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--half', action='store_true', help='use FP16 half-precision inference')
-    parser.add_argument('--test', action='store_true', help='test exports only')
-    parser.add_argument('--pt-only', action='store_true', help='test PyTorch only')
+    parser.add_argument('--datasets', action='store_true', help='datasets exports only')
+    parser.add_argument('--pt-only', action='store_true', help='datasets PyTorch only')
     parser.add_argument('--hard-fail', nargs='?', const=True, default=False, help='Exception on error or < min metric')
     opt = parser.parse_args()
     opt.data = check_yaml(opt.data)  # check YAML

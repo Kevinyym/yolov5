@@ -95,7 +95,7 @@ def train(opt, device):
                                                    rank=LOCAL_RANK,
                                                    workers=nw)
 
-    test_dir = data_dir / 'test' if (data_dir / 'test').exists() else data_dir / 'val'  # data/test or data/val
+    test_dir = data_dir / 'datasets' if (data_dir / 'datasets').exists() else data_dir / 'val'  # data/datasets or data/val
     if RANK in {-1, 0}:
         testloader = create_classification_dataloader(path=test_dir,
                                                       imgsz=imgsz,
@@ -162,8 +162,8 @@ def train(opt, device):
     criterion = smartCrossEntropyLoss(label_smoothing=opt.label_smoothing)  # loss function
     best_fitness = 0.0
     scaler = amp.GradScaler(enabled=cuda)
-    val = test_dir.stem  # 'val' or 'test'
-    LOGGER.info(f'Image sizes {imgsz} train, {imgsz} test\n'
+    val = test_dir.stem  # 'val' or 'datasets'
+    LOGGER.info(f'Image sizes {imgsz} train, {imgsz} datasets\n'
                 f'Using {nw * WORLD_SIZE} dataloader workers\n'
                 f"Logging results to {colorstr('bold', save_dir)}\n"
                 f'Starting {opt.model} training on {data} dataset with {nc} classes for {epochs} epochs...\n\n'
@@ -206,7 +206,7 @@ def train(opt, device):
                     top1, top5, vloss = validate.run(model=ema.ema,
                                                      dataloader=testloader,
                                                      criterion=criterion,
-                                                     pbar=pbar)  # test accuracy, loss
+                                                     pbar=pbar)  # datasets accuracy, loss
                     fitness = top1  # define fitness as top1 accuracy
 
         # Scheduler
