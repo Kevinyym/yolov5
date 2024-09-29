@@ -254,3 +254,7 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+torch-2.4.1+cu121-cp38-cp38-win_amd64.whl
+torchvision-0.19.1+cu121-cp38-cp38-win_amd64.whl
+datasets/labels/train.cache
+datasets/labels/val.cache
