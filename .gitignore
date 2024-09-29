@@ -258,3 +258,106 @@ torch-2.4.1+cu121-cp38-cp38-win_amd64.whl
 torchvision-0.19.1+cu121-cp38-cp38-win_amd64.whl
 datasets/labels/train.cache
 datasets/labels/val.cache
+datasets1/labels/train.cache
+datasets1/labels/val.cache
+datasets1/labels/train/13x75_01.txt
+datasets1/labels/train/13x75_02.txt
+datasets1/labels/train/13x75_03.txt
+datasets1/labels/train/13x75_04.txt
+datasets1/labels/train/13x100_01.txt
+datasets1/labels/train/13x100_02.txt
+datasets1/labels/train/13x100_03.txt
+datasets1/labels/train/13x100_04.txt
+datasets1/labels/train/16x100_01.txt
+datasets1/labels/train/16x100_02.txt
+datasets1/labels/train/16x100_03.txt
+datasets1/labels/train/16x100_04.txt
+datasets1/labels/train/81915_in_ 13x75_01.txt
+datasets1/labels/train/81915_in_ 13x75_02.txt
+datasets1/labels/train/81915_in_ 13x75_03.txt
+datasets1/labels/train/81915_in_ 13x75_04.txt
+datasets1/labels/train/81915_in_ 13x100_01.txt
+datasets1/labels/train/81915_in_ 13x100_02.txt
+datasets1/labels/train/81915_in_ 13x100_03.txt
+datasets1/labels/train/81915_in_ 13x100_04.txt
+datasets1/labels/train/81916_nest_01.txt
+datasets1/labels/train/81916_nest_02.txt
+datasets1/labels/train/81916_nest_03.txt
+datasets1/labels/train/81916_nest_04.txt
+datasets1/labels/train/2190034_01.txt
+datasets1/labels/train/2190034_02.txt
+datasets1/labels/train/2190034_03.txt
+datasets1/labels/train/2190034_04.txt
+datasets1/labels/train/Access_3.0_01.txt
+datasets1/labels/train/Access_3.0_02.txt
+datasets1/labels/train/Access_3.0_03.txt
+datasets1/labels/train/Access_3.0_04.txt
+datasets1/labels/train/Bec_0.5_01.txt
+datasets1/labels/train/Bec_0.5_02.txt
+datasets1/labels/train/Bec_0.5_03.txt
+datasets1/labels/train/Bec_0.5_04.txt
+datasets1/labels/train/Bec_0.5_in 16x100_01.txt
+datasets1/labels/train/Bec_0.5_in 16x100_02.txt
+datasets1/labels/train/Bec_0.5_in 16x100_03.txt
+datasets1/labels/train/Bec_0.5_in 16x100_04.txt
+datasets1/labels/train/Bec_2.0_01.txt
+datasets1/labels/train/Bec_2.0_02.txt
+datasets1/labels/train/Bec_2.0_03.txt
+datasets1/labels/train/Bec_2.0_04.txt
+datasets1/labels/train/Bec_2.0_in_16x100_01.txt
+datasets1/labels/train/Bec_2.0_in_16x100_02.txt
+datasets1/labels/train/Bec_2.0_in_16x100_03.txt
+datasets1/labels/train/Bec_2.0_in_16x100_04.txt
+datasets1/labels/train/Hitachi_01.txt
+datasets1/labels/train/Hitachi_02.txt
+datasets1/labels/train/Hitachi_03.txt
+datasets1/labels/train/Hitachi_04.txt
+datasets1/labels/train/Hitachi_in_16x100_01.txt
+datasets1/labels/train/Hitachi_in_16x100_02.txt
+datasets1/labels/train/Hitachi_in_16x100_03.txt
+datasets1/labels/train/Hitachi_in_16x100_04.txt
+datasets1/labels/train/No_container_ Cup_Rack_01.txt
+datasets1/labels/train/No_container_ Cup_Rack_02.txt
+datasets1/labels/train/No_container_ Cup_Rack_03.txt
+datasets1/labels/train/No_container_ Cup_Rack_04.txt
+datasets1/labels/train/No_container_ Tube_Rack_01.txt
+datasets1/labels/train/No_container_ Tube_Rack_02.txt
+datasets1/labels/train/No_container_ Tube_Rack_03.txt
+datasets1/labels/train/No_container_ Tube_Rack_04.txt
+datasets1/labels/train/Sarstedtz_4.9_01.txt
+datasets1/labels/train/Sarstedtz_4.9_02.txt
+datasets1/labels/train/Sarstedtz_4.9_03.txt
+datasets1/labels/train/Sarstedtz_4.9_04.txt
+datasets1/labels/train/Sarstedtz_5.5_01.txt
+datasets1/labels/train/Sarstedtz_5.5_02.txt
+datasets1/labels/train/Sarstedtz_5.5_03.txt
+datasets1/labels/train/Sarstedtz_5.5_04.txt
+datasets1/labels/train/Sarstedtz_7.5_01.txt
+datasets1/labels/train/Sarstedtz_7.5_02.txt
+datasets1/labels/train/Sarstedtz_7.5_03.txt
+datasets1/labels/train/Sarstedtz_7.5_04.txt
+datasets1/labels/train/Sarstedtz_9_01.txt
+datasets1/labels/train/Sarstedtz_9_02.txt
+datasets1/labels/train/Sarstedtz_9_03.txt
+datasets1/labels/train/Sarstedtz_9_04.txt
+datasets1/labels/val/13x75_05.txt
+datasets1/labels/val/13x100_05.txt
+datasets1/labels/val/16x100_05.txt
+datasets1/labels/val/81915_in_ 13x75_05.txt
+datasets1/labels/val/81915_in_ 13x100_05.txt
+datasets1/labels/val/81916_nest_05.txt
+datasets1/labels/val/2190034_05.txt
+datasets1/labels/val/Access_3.0_05.txt
+datasets1/labels/val/Bec_0.5_05.txt
+datasets1/labels/val/Bec_0.5_in 16x100_05.txt
+datasets1/labels/val/Bec_2.0_05.txt
+datasets1/labels/val/Bec_2.0_in_16x100_05.txt
+datasets1/labels/val/Hitachi_05.txt
+datasets1/labels/val/Hitachi_in_16x100_05.txt
+datasets1/labels/val/No_container_ Cup_Rack_05.txt
+datasets1/labels/val/No_container_ Tube_Rack_05.txt
+datasets1/labels/val/Sarstedtz_4.9_05.txt
+datasets1/labels/val/Sarstedtz_5.5_05.txt
+datasets1/labels/val/Sarstedtz_7.5_05.txt
+datasets1/labels/val/Sarstedtz_9_05.txt
+datasets1/classes.txt

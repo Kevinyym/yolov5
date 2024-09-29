@@ -15,7 +15,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setupUi(self)
-        self.model = torch.hub.load("./", "custom", path="runs/train/exp/weights/best.pt", source="local")
+        self.model = torch.hub.load("./", "custom", path="runs/train/exp2/weights/best.pt", source="local")
         self.timer = QTimer()
         self.timer.setInterval(1)
         self.video = None
@@ -29,7 +29,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def open_images(self):
         print('点击了检测图片')
         self.timer.stop()
-        file_path = QFileDialog.getOpenFileName(self, dir="./datasets/images/train", filter="*.jpg;*.png;*.jpeg")
+        file_path = QFileDialog.getOpenFileName(self, dir="./datasets1/images/train", filter="*.jpg;*.png;*.jpeg;*.BMP")
         if file_path[0]:
             file_path = file_path[0]
             qimage = self.image_pred(file_path)
@@ -49,7 +49,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def open_video(self):
         print('点击了检测视频按钮')
-        file_path = QFileDialog.getOpenFileName(self, dir="./datasets", filter="*.mp4")
+        file_path = QFileDialog.getOpenFileName(self, dir="./datasets1", filter="*.mp4")
         if file_path[0]:
             file_path = file_path[0]
             self.video = cv2.VideoCapture(file_path)
