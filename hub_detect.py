@@ -15,7 +15,7 @@
 import torch
 
 # Model
-model = torch.hub.load("./", "custom", path="runs/train/exp2/weights/best.pt", source="local")
+model = torch.hub.load("./", "custom", path="runs/train/exp/weights/best.pt", source="local")
 
 # Images
 img = "./datasets/images/train/30.jpg"
